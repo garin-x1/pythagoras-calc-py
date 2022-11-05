@@ -24,10 +24,6 @@ while True:
 
     if (a == "" and b == "") or (a == "" and c == "") or (b == "" and c == ""):
         print("Please enter at least two of them\n")
-    #elif :
-    #    print("Please enter at least two of them\n")
-    #elif :
-    #    print("Please enter at least two of them\n")
     elif a == "":
         b = int(b)
         c = int(c)
