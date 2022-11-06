@@ -1,2 +1,2 @@
-# Pythagoras Calculator
-Simple calculator for solving pythagoras problem using simple pythagoras algorithm.
+# Kalkulator Pythagoras
+Kalkulator simpel untuk memecahkan masalah-masalah yang berkaitan dengan teorema pythagoras menggunakan simpel algoritma pythagoras.
