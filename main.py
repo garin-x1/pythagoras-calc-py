@@ -32,7 +32,9 @@ while True:
         a = int(a)
         c = int(c)
         cari_b(a,c)
-    else:
+    elif c == "":
         a = int(a)
         b = int(b)
         cari_hipotenusa(a,b)
+    else:
+        print("Semua variabel telah terisi\n")
