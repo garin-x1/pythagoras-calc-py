@@ -2,15 +2,15 @@ from math import sqrt
 
 def cari_a(b,hipotenusa):
     a_2 = (hipotenusa**2) - (b**2)
-    print(f"{hipotenusa**2} - {b**2} = {a_2} => {sqrt(a_2)}\n")
+    print(f"\n{hipotenusa**2} - {b**2} = {a_2} => {sqrt(a_2)}\n")
 
 def cari_b(a, hipotenusa):
     b_2 = (hipotenusa**2) - (a**2)
-    print(f"{hipotenusa**2} - {a**2} = {b_2} => {sqrt(b_2)}\n")
+    print(f"\n{hipotenusa**2} - {a**2} = {b_2} => {sqrt(b_2)}\n")
 
 def cari_hipotenusa(a,b):
     hipotenusa_2 = (a**2) + (b**2)
-    print(f"{a**2} + {b**2} = {hipotenusa_2} => {sqrt(hipotenusa_2)}\n")
+    print(f"\n{a**2} + {b**2} = {hipotenusa_2} => {sqrt(hipotenusa_2)}\n")
 
 while True:
     print("-------------------------------")
@@ -23,7 +23,7 @@ while True:
     c = input("c = ")
 
     if (a == "" and b == "") or (a == "" and c == "") or (b == "" and c == ""):
-        print("Tolong isi setidaknya dua dari itu\n")
+        print("\nTolong isi setidaknya dua dari itu\n")
     elif a == "":
         b = int(b)
         c = int(c)
@@ -37,4 +37,4 @@ while True:
         b = int(b)
         cari_hipotenusa(a,b)
     else:
-        print("Semua variabel telah terisi\n")
+        print("\nSemua variabel telah terisi\n")
