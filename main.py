@@ -32,7 +32,9 @@ while True:
         a = int(a)
         c = int(c)
         get_b(a,c)
-    else:
+    elif c == "":
         a = int(a)
         b = int(b)
         get_hypotenuse(a,b)
+    else:
+        print("All variable have been filled\n")
