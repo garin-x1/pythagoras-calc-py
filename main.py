@@ -2,15 +2,15 @@ from math import sqrt
 
 def get_a(b,hypotenuse):
     a_2 = (hypotenuse**2) - (b**2)
-    print(f"\n{hypotenuse**2} - {b**2} = {a_2} => {sqrt(a_2)}\n")
+    print(f"\n=> {hypotenuse**2} - {b**2} = {a_2} => {sqrt(a_2)}\n")
 
 def get_b(a, hypotenuse):
     b_2 = (hypotenuse**2) - (a**2)
-    print(f"\n{hypotenuse**2} - {a**2} = {b_2} => {sqrt(b_2)}\n")
+    print(f"\n=> {hypotenuse**2} - {a**2} = {b_2} => {sqrt(b_2)}\n")
 
 def get_hypotenuse(a,b):
     hypotenuse_2 = (a**2) + (b**2)
-    print(f"\n{a**2} + {b**2} = {hypotenuse_2} => {sqrt(hypotenuse_2)}\n")
+    print(f"\n=> {a**2} + {b**2} = {hypotenuse_2} => {sqrt(hypotenuse_2)}\n")
 
 while True:
     print("-------------------------------")
@@ -23,18 +23,18 @@ while True:
     c = input("c = ")
 
     if (a == "" and b == "") or (a == "" and c == "") or (b == "" and c == ""):
-        print("\nPlease enter at least two of them\n")
+        print("\n=> Please enter at least two of them\n")
     elif a == "":
-        b = int(b)
-        c = int(c)
+        b = float(b)
+        c = float(c)
         get_a(b,c)
     elif b == "":
-        a = int(a)
-        c = int(c)
+        a = float(a)
+        c = float(c)
         get_b(a,c)
     elif c == "":
-        a = int(a)
-        b = int(b)
+        a = float(a)
+        b = float(b)
         get_hypotenuse(a,b)
     else:
-        print("\nAll variable have been filled\n")
+        print("\n=> All variable have been filled\n")
